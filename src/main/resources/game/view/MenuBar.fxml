@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1500.0" styleClass="mainMenu" stylesheets="@Stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.view.MenuBarController">
+   <top>
+      <MenuBar styleClass="menuBar" stylesheets="@Stylesheet.css" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu text="_File">
+            <items>
+              <MenuItem onAction="#closeApp" text="_Exit">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="Q" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+            </items>
+          </Menu>
+            <Menu text="_View">
+               <items>
+                  <MenuItem onAction="#minimiseScreen" text="_Minimise">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="DOWN" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem onAction="#maximiseScreen" text="_Maximise">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="UP" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem onAction="#makeFullScreen" text="_Full Screen">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="F11" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+               </items>
+            </Menu>
+          <Menu onAction="#showHowToPlay" text="_Help">
+            <items>
+              <MenuItem onAction="#showHowToPlay" text="_How To Play">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="H" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

@@ -1,0 +1,97 @@
+.mainMenu {
+    -fx-background-image: url("../../images/SpaceBackground.jpg");
+}
+
+.ground {
+    -fx-background-image: url("../../images/GroundMoonTexture.jpg");
+    -fx-background-repeat: repeat-x;
+}
+
+.title {
+    -fx-font-family: "High Tower Text";
+    -fx-font-size: 120;
+    -fx-font-style: italic;
+    -fx-text-fill: white;
+}
+
+.instructions {
+    -fx-font-family: "High Tower Text";
+    -fx-font-size: 30;
+    -fx-text-fill: white;
+}
+
+.smallText {
+    -fx-font-family: "Consolas";
+    -fx-font-size: 20;
+    -fx-text-fill: white;
+}
+
+.normalText {
+    -fx-font-family: "Consolas";
+    -fx-font-size: 30;
+    -fx-text-fill: white;
+}
+
+.enhancedText {
+    -fx-font-family: "Consolas";
+    -fx-font-size: 40;
+    -fx-text-fill: white;
+}
+
+.textField {
+    -fx-border-color: white;
+    -fx-border-width: 1;
+    -fx-background-color: transparent;
+}
+
+.textArea {
+    -fx-border-color: white;
+    -fx-border-width: 1;
+    -fx-background-color: transparent;
+}
+
+.textArea .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.textArea .scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.textArea .scroll-pane .content {
+    -fx-background-color: transparent;
+}
+
+.menuButton {
+    -fx-font-family: "High Tower Text";
+    -fx-font-size: 25;
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to bottom, #110033 0%, #000065 100%);
+    -fx-border-width: 2;
+}
+
+.menuButton:hover {
+    -fx-text-fill: turquoise;
+    -fx-font-size: 30;
+    -fx-border-color: linear-gradient(to bottom, #000065 0%, #0000D9 100%);
+}
+
+.menuButton:pressed {
+    -fx-border-color: turquoise;
+    -fx-border-width: 2;
+}
+
+.menuBar, .context-menu {
+    -fx-background-color: linear-gradient(to right, #110022 0%, #000035 100%);
+}
+
+.menuBar .label {
+    -fx-text-fill: white;
+    -fx-font-size: 25;
+    -fx-font-family: "High Tower Text"
+}
+
+.progressBar .bar {
+    -fx-background-color: linear-gradient(to right, #8B8000 0%, #028020 100%);
+}
